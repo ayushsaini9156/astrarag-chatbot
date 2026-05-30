@@ -13,6 +13,11 @@ app.include_router(chat_router)
 
 settings = Settings()
 
+
+@app.get("/health")
+def health_check():
+    return {"status": "ok"}
+
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run(

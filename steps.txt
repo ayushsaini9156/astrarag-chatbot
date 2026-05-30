@@ -2,9 +2,7 @@ Document Ingestion:
 
 python -m src.rag_doc_ingestion.ingest_docs
 
-python -m src.agents_src.check_crew
-
-python -m src.backend_src.main
-
 
 streamlit run src/frontend_src/app.py
+
+The Streamlit app will auto-start the backend on port 8000 if it is not already running.
